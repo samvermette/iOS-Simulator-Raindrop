@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLRaindropCreator</key>
+	<string>Sam Vermette</string>
+	<key>CLRaindropDescription</key>
+	<string>Takes screenshot of currently visible UI.</string>
+	<key>CLRaindropName</key>
+	<string>iOS Simulator</string>
+	<key>CLRaindropTargetBundleID</key>
+	<string>com.apple.iphonesimulator</string>
+	<key>CLRaindropURL</key>
+	<string>http://samvermette.com</string>
+</dict>
+</plist>

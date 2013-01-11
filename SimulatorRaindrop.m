@@ -13,6 +13,8 @@
 #define kWindowSizePhoneRetina CGSizeMake(752,1072)
 #define kWindowSizePhoneRetinaLandscape CGSizeMake(1072,752)
 #define kWindowSizePhoneRetina50 CGSizeMake(434,616)
+#define kWindowSizePhoneFive50 CGSizeMake(434,704)
+#define kWindowSizePhoneFive CGSizeMake(752,1248)
 #define kWindowSizeTablet CGSizeMake(880,1136)
 #define kWindowSizeTabletLandscape CGSizeMake(1136,880)
 
@@ -21,6 +23,8 @@
 #define kViewRectPhoneRetina CGRectMake(56,50,640,960)
 #define kViewRectPhoneRetinaLandscape CGRectMake(56,50,960,640)
 #define kViewRectPhoneRetina50 CGRectMake(57,57,320,480)
+#define kViewRectPhoneFive50 CGRectMake(57,57,320,568)
+#define kViewRectPhoneFive CGRectMake(56,50,640,1136)
 #define kViewRectTablet CGRectMake(56,50,768,1024)
 #define kViewRectTabletLandscape CGRectMake(56,50,1024,768)
 
@@ -59,6 +63,10 @@
 				cropRect = kViewRectTabletLandscape;
             else if(CGSizeEqualToSize(windowSize, kWindowSizePhoneRetina50))
 				cropRect = kViewRectPhoneRetina50;
+            else if(CGSizeEqualToSize(windowSize, kWindowSizePhoneFive))
+				cropRect = kViewRectPhoneFive;
+            else if(CGSizeEqualToSize(windowSize, kWindowSizePhoneFive50))
+				cropRect = kViewRectPhoneFive50;
             
             //NSLog(@"cropRect = %@", NSStringFromRect(cropRect));
 			

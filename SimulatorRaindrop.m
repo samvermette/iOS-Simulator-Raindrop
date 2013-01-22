@@ -19,7 +19,7 @@
 		
 		NSString *applicationName = [entry objectForKey:(id)kCGWindowOwnerName];
 		
-		if(applicationName != NULL && [applicationName isEqualToString:@"iOS Simulator"]) {
+		if(applicationName != NULL && ([applicationName isEqualToString:@"iOS Simulator"] || [applicationName isEqualToString:@"Simulateur iOS"])) { // this should be put inside a localizables table or something
 			
 			CGWindowID windowID = [[entry objectForKey:(id)kCGWindowNumber] unsignedIntValue];
 			NSLog(@"%@ (%i)", applicationName, windowID);

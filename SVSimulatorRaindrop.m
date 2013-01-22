@@ -6,10 +6,10 @@
 //  Copyright 2011 Sam Vermette. All rights reserved.
 //
 
-#import "SimulatorRaindrop.h"
+#import "SVSimulatorRaindrop.h"
 #import "SVSimulatorDeviceSizes.h"
 
-@implementation SimulatorRaindrop
+@implementation SVSimulatorRaindrop
 
 - (NSString *)pasteboardNameForTriggeredRaindrop {
 	

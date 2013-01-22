@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		227C45331344E81200EED30D /* Raindrop.plist in Resources */ = {isa = PBXBuildFile; fileRef = 227C45321344E81200EED30D /* Raindrop.plist */; };
-		227C45381344E85600EED30D /* SimulatorRaindrop.m in Sources */ = {isa = PBXBuildFile; fileRef = 227C45371344E85600EED30D /* SimulatorRaindrop.m */; };
+		227C45381344E85600EED30D /* SVSimulatorRaindrop.m in Sources */ = {isa = PBXBuildFile; fileRef = 227C45371344E85600EED30D /* SVSimulatorRaindrop.m */; };
 		8D5B49B0048680CD000E48DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
 		8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
@@ -20,8 +20,8 @@
 		1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		227C45311344E7FA00EED30D /* CLRaindropProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLRaindropProtocol.h; sourceTree = "<group>"; };
 		227C45321344E81200EED30D /* Raindrop.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Raindrop.plist; sourceTree = "<group>"; };
-		227C45361344E85600EED30D /* SimulatorRaindrop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimulatorRaindrop.h; sourceTree = "<group>"; };
-		227C45371344E85600EED30D /* SimulatorRaindrop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimulatorRaindrop.m; sourceTree = "<group>"; };
+		227C45361344E85600EED30D /* SVSimulatorRaindrop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVSimulatorRaindrop.h; sourceTree = "<group>"; };
+		227C45371344E85600EED30D /* SVSimulatorRaindrop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVSimulatorRaindrop.m; sourceTree = "<group>"; };
 		22ACC67A16AF9D8B003AEFF2 /* SVSimulatorDeviceSizes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVSimulatorDeviceSizes.h; sourceTree = "<group>"; };
 		32DBCF630370AF2F00C91783 /* iOS Simulator_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "iOS Simulator_Prefix.pch"; sourceTree = "<group>"; };
 		8D5B49B6048680CD000E48DA /* iOS Simulator.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS Simulator.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,8 +76,8 @@
 			isa = PBXGroup;
 			children = (
 				227C45311344E7FA00EED30D /* CLRaindropProtocol.h */,
-				227C45361344E85600EED30D /* SimulatorRaindrop.h */,
-				227C45371344E85600EED30D /* SimulatorRaindrop.m */,
+				227C45361344E85600EED30D /* SVSimulatorRaindrop.h */,
+				227C45371344E85600EED30D /* SVSimulatorRaindrop.m */,
 				22ACC67A16AF9D8B003AEFF2 /* SVSimulatorDeviceSizes.h */,
 			);
 			name = Classes;
@@ -179,7 +179,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				227C45381344E85600EED30D /* SimulatorRaindrop.m in Sources */,
+				227C45381344E85600EED30D /* SVSimulatorRaindrop.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

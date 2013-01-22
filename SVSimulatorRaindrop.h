@@ -9,7 +9,7 @@
 #import <Cocoa/Cocoa.h>
 #import "CLRaindropProtocol.h"
 
-@interface SimulatorRaindrop : NSObject <CLRaindropProtocol>  {
+@interface SVSimulatorRaindrop : NSObject <CLRaindropProtocol>  {
 
 }
 

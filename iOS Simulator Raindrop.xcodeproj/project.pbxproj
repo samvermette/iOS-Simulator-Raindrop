@@ -49,8 +49,8 @@
 		22ACC69916AF9D8B003AEFF2 /* Simulator_Grabber.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Simulator_Grabber.1; sourceTree = "<group>"; };
 		22ACC6A116AF9D8B003AEFF2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		22ACC6A316AF9D8B003AEFF2 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		32DBCF630370AF2F00C91783 /* iOS Simulator_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "iOS Simulator_Prefix.pch"; sourceTree = "<group>"; };
-		8D5B49B6048680CD000E48DA /* iOS Simulator.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS Simulator.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		32DBCF630370AF2F00C91783 /* iOS Simulator Raindrop_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "iOS Simulator Raindrop_Prefix.pch"; sourceTree = "<group>"; };
+		8D5B49B6048680CD000E48DA /* iOS Simulator Raindrop.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS Simulator Raindrop.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D5B49B7048680CD000E48DA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2F7E65807B2D6F200F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
@@ -144,7 +144,7 @@
 		19C28FB8FE9D52D311CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8D5B49B6048680CD000E48DA /* iOS Simulator.bundle */,
+				8D5B49B6048680CD000E48DA /* iOS Simulator Raindrop.bundle */,
 				22ACC68F16AF9D8B003AEFF2 /* Simulator Grabber */,
 			);
 			name = Products;
@@ -179,7 +179,7 @@
 		32C88E010371C26100C91783 /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
-				32DBCF630370AF2F00C91783 /* iOS Simulator_Prefix.pch */,
+				32DBCF630370AF2F00C91783 /* iOS Simulator Raindrop_Prefix.pch */,
 			);
 			name = "Other Sources";
 			sourceTree = "<group>";
@@ -204,9 +204,9 @@
 			productReference = 22ACC68F16AF9D8B003AEFF2 /* Simulator Grabber */;
 			productType = "com.apple.product-type.tool";
 		};
-		8D5B49AC048680CD000E48DA /* iOS Simulator */ = {
+		8D5B49AC048680CD000E48DA /* iOS Simulator Raindrop */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "iOS Simulator" */;
+			buildConfigurationList = 1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "iOS Simulator Raindrop" */;
 			buildPhases = (
 				8D5B49AF048680CD000E48DA /* Resources */,
 				8D5B49B1048680CD000E48DA /* Sources */,
@@ -216,10 +216,10 @@
 			);
 			dependencies = (
 			);
-			name = "iOS Simulator";
+			name = "iOS Simulator Raindrop";
 			productInstallPath = "$(HOME)/Library/Bundles";
 			productName = "iOS Simulator";
-			productReference = 8D5B49B6048680CD000E48DA /* iOS Simulator.bundle */;
+			productReference = 8D5B49B6048680CD000E48DA /* iOS Simulator Raindrop.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -227,7 +227,7 @@
 /* Begin PBXProject section */
 		089C1669FE841209C02AAC07 /* Project object */ = {
 			isa = PBXProject;
-			buildConfigurationList = 1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "iOS Simulator" */;
+			buildConfigurationList = 1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "iOS Simulator Raindrop" */;
 			compatibilityVersion = "Xcode 3.1";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
@@ -241,7 +241,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8D5B49AC048680CD000E48DA /* iOS Simulator */,
+				8D5B49AC048680CD000E48DA /* iOS Simulator Raindrop */,
 				22ACC68E16AF9D8B003AEFF2 /* Simulator Grabber */,
 			);
 		};
@@ -303,10 +303,10 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "iOS Simulator_Prefix.pch";
+				GCC_PREFIX_HEADER = "iOS Simulator Raindrop_Prefix.pch";
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Bundles";
-				PRODUCT_NAME = "iOS Simulator";
+				PRODUCT_NAME = "iOS Simulator Raindrop";
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
@@ -320,10 +320,10 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "iOS Simulator_Prefix.pch";
+				GCC_PREFIX_HEADER = "iOS Simulator Raindrop_Prefix.pch";
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Bundles";
-				PRODUCT_NAME = "iOS Simulator";
+				PRODUCT_NAME = "iOS Simulator Raindrop";
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
@@ -406,7 +406,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "iOS Simulator" */ = {
+		1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "iOS Simulator Raindrop" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1DEB913B08733D840010E9CD /* Debug */,
@@ -415,7 +415,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "iOS Simulator" */ = {
+		1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "iOS Simulator Raindrop" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1DEB913F08733D840010E9CD /* Debug */,

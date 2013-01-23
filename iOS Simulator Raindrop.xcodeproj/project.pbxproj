@@ -9,12 +9,10 @@
 /* Begin PBXBuildFile section */
 		227C45331344E81200EED30D /* Raindrop.plist in Resources */ = {isa = PBXBuildFile; fileRef = 227C45321344E81200EED30D /* Raindrop.plist */; };
 		227C45381344E85600EED30D /* SVSimulatorRaindrop.m in Sources */ = {isa = PBXBuildFile; fileRef = 227C45371344E85600EED30D /* SVSimulatorRaindrop.m */; };
-		22ACC69316AF9D8B003AEFF2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22ACC69216AF9D8B003AEFF2 /* Foundation.framework */; };
 		22ACC69616AF9D8B003AEFF2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22ACC69516AF9D8B003AEFF2 /* main.m */; };
 		22ACC69A16AF9D8B003AEFF2 /* Simulator_Grabber.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 22ACC69916AF9D8B003AEFF2 /* Simulator_Grabber.1 */; };
-		22ACC6A216AF9D8B003AEFF2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22ACC6A116AF9D8B003AEFF2 /* CoreGraphics.framework */; };
-		22ACC6A416AF9D8B003AEFF2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22ACC6A316AF9D8B003AEFF2 /* Cocoa.framework */; };
 		22ACC6A916AF9D8B003AEFF2 /* SVSimulatorRaindrop.m in Sources */ = {isa = PBXBuildFile; fileRef = 227C45371344E85600EED30D /* SVSimulatorRaindrop.m */; };
+		22ACC6AB16AF9D8B003AEFF2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22ACC6AA16AF9D8B003AEFF2 /* Cocoa.framework */; };
 		8D5B49B0048680CD000E48DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
 		8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
@@ -43,16 +41,13 @@
 		227C45371344E85600EED30D /* SVSimulatorRaindrop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVSimulatorRaindrop.m; sourceTree = "<group>"; };
 		22ACC67A16AF9D8B003AEFF2 /* SVSimulatorDeviceSizes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVSimulatorDeviceSizes.h; sourceTree = "<group>"; };
 		22ACC68F16AF9D8B003AEFF2 /* Simulator Grabber */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Simulator Grabber"; sourceTree = BUILT_PRODUCTS_DIR; };
-		22ACC69216AF9D8B003AEFF2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		22ACC69516AF9D8B003AEFF2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		22ACC69816AF9D8B003AEFF2 /* Simulator Grabber-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Simulator Grabber-Prefix.pch"; sourceTree = "<group>"; };
-		22ACC69916AF9D8B003AEFF2 /* Simulator_Grabber.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Simulator_Grabber.1; sourceTree = "<group>"; };
-		22ACC6A116AF9D8B003AEFF2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		22ACC6A316AF9D8B003AEFF2 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		22ACC69516AF9D8B003AEFF2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "Simulator Grabber/main.m"; sourceTree = "<group>"; };
+		22ACC69816AF9D8B003AEFF2 /* Simulator Grabber-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Simulator Grabber-Prefix.pch"; path = "Simulator Grabber/Simulator Grabber-Prefix.pch"; sourceTree = "<group>"; };
+		22ACC69916AF9D8B003AEFF2 /* Simulator_Grabber.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; name = Simulator_Grabber.1; path = "Simulator Grabber/Simulator_Grabber.1"; sourceTree = "<group>"; };
+		22ACC6AA16AF9D8B003AEFF2 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		32DBCF630370AF2F00C91783 /* iOS Simulator Raindrop_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "iOS Simulator Raindrop_Prefix.pch"; sourceTree = "<group>"; };
 		8D5B49B6048680CD000E48DA /* iOS Simulator Raindrop.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS Simulator Raindrop.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D5B49B7048680CD000E48DA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D2F7E65807B2D6F200F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22ACC6A416AF9D8B003AEFF2 /* Cocoa.framework in Frameworks */,
-				22ACC6A216AF9D8B003AEFF2 /* CoreGraphics.framework in Frameworks */,
-				22ACC69316AF9D8B003AEFF2 /* Foundation.framework in Frameworks */,
+				22ACC6AB16AF9D8B003AEFF2 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,14 +73,9 @@
 		089C166AFE841209C02AAC07 /* iOS Simulator */ = {
 			isa = PBXGroup;
 			children = (
-				22ACC6A316AF9D8B003AEFF2 /* Cocoa.framework */,
-				22ACC6A116AF9D8B003AEFF2 /* CoreGraphics.framework */,
-				32C88E010371C26100C91783 /* Other Sources */,
 				08FB77AFFE84173DC02AAC07 /* Classes */,
-				22ACC69416AF9D8B003AEFF2 /* Simulator Grabber */,
-				089C167CFE841241C02AAC07 /* Resources */,
+				32C88E010371C26100C91783 /* Other Sources */,
 				089C1671FE841209C02AAC07 /* Frameworks and Libraries */,
-				22ACC69116AF9D8B003AEFF2 /* Frameworks */,
 				19C28FB8FE9D52D311CA2CBB /* Products */,
 			);
 			name = "iOS Simulator";
@@ -96,20 +84,12 @@
 		089C1671FE841209C02AAC07 /* Frameworks and Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */,
-				1058C7AEFEA557BF11CA2CBB /* Other Frameworks */,
+				22ACC6AA16AF9D8B003AEFF2 /* Cocoa.framework */,
+				089C167FFE841241C02AAC07 /* AppKit.framework */,
+				089C1672FE841209C02AAC07 /* Foundation.framework */,
+				1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */,
 			);
 			name = "Frameworks and Libraries";
-			sourceTree = "<group>";
-		};
-		089C167CFE841241C02AAC07 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				227C45321344E81200EED30D /* Raindrop.plist */,
-				8D5B49B7048680CD000E48DA /* Info.plist */,
-				089C167DFE841241C02AAC07 /* InfoPlist.strings */,
-			);
-			name = Resources;
 			sourceTree = "<group>";
 		};
 		08FB77AFFE84173DC02AAC07 /* Classes */ = {
@@ -123,24 +103,6 @@
 			name = Classes;
 			sourceTree = "<group>";
 		};
-		1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */,
-			);
-			name = "Linked Frameworks";
-			sourceTree = "<group>";
-		};
-		1058C7AEFEA557BF11CA2CBB /* Other Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				089C167FFE841241C02AAC07 /* AppKit.framework */,
-				D2F7E65807B2D6F200F64583 /* CoreData.framework */,
-				089C1672FE841209C02AAC07 /* Foundation.framework */,
-			);
-			name = "Other Frameworks";
-			sourceTree = "<group>";
-		};
 		19C28FB8FE9D52D311CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -150,35 +112,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		22ACC69116AF9D8B003AEFF2 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				22ACC69216AF9D8B003AEFF2 /* Foundation.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		22ACC69416AF9D8B003AEFF2 /* Simulator Grabber */ = {
-			isa = PBXGroup;
-			children = (
-				22ACC69516AF9D8B003AEFF2 /* main.m */,
-				22ACC69916AF9D8B003AEFF2 /* Simulator_Grabber.1 */,
-				22ACC69716AF9D8B003AEFF2 /* Supporting Files */,
-			);
-			path = "Simulator Grabber";
-			sourceTree = "<group>";
-		};
-		22ACC69716AF9D8B003AEFF2 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				22ACC69816AF9D8B003AEFF2 /* Simulator Grabber-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		32C88E010371C26100C91783 /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
+				22ACC69516AF9D8B003AEFF2 /* main.m */,
+				227C45321344E81200EED30D /* Raindrop.plist */,
+				8D5B49B7048680CD000E48DA /* Info.plist */,
+				089C167DFE841241C02AAC07 /* InfoPlist.strings */,
+				22ACC69916AF9D8B003AEFF2 /* Simulator_Grabber.1 */,
+				22ACC69816AF9D8B003AEFF2 /* Simulator Grabber-Prefix.pch */,
 				32DBCF630370AF2F00C91783 /* iOS Simulator Raindrop_Prefix.pch */,
 			);
 			name = "Other Sources";

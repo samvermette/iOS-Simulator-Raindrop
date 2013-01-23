@@ -15,7 +15,7 @@
 	
 	CFArrayRef windowList = CGWindowListCopyWindowInfo(kCGWindowListOptionAll, kCGNullWindowID);
 	
-	for(NSDictionary *entry in (NSArray*)windowList) {
+	for(NSDictionary *entry in (__bridge NSArray*)windowList) {
 		
 		NSString *applicationName = [entry objectForKey:(id)kCGWindowOwnerName];
 		
@@ -68,7 +68,7 @@
 				CGImageRef croppedImage = CGImageCreateWithImageInRect(windowImage, cropRect);
 				CGImageRelease(windowImage);
 				
-				CGImageDestinationRef imageDestination = CGImageDestinationCreateWithURL((CFURLRef)tempURL, kUTTypePNG, 1, NULL);
+				CGImageDestinationRef imageDestination = CGImageDestinationCreateWithURL((__bridge CFURLRef)tempURL, kUTTypePNG, 1, NULL);
 				CGImageDestinationAddImage(imageDestination, croppedImage, NULL);
 				CGImageDestinationFinalize(imageDestination);
 				CGImageRelease(croppedImage);
@@ -78,7 +78,7 @@
 				NSData *imageData = [NSData dataWithContentsOfFile:screenshotPath];
 				
 				NSPasteboard *pasteboard = [NSPasteboard pasteboardWithUniqueName];
-				NSPasteboardItem *item = [[[NSPasteboardItem alloc] init] autorelease];
+				NSPasteboardItem *item = [[NSPasteboardItem alloc] init];
 				[item setData:imageData forType:(NSString *)kUTTypePNG];
 				[item setString:@"simulator.png" forType:@"public.url-name"];
 				[pasteboard writeObjects:[NSArray arrayWithObject:item]];

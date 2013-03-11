@@ -14,7 +14,9 @@
 		22ACC6A916AF9D8B003AEFF2 /* SVSimulatorRaindrop.m in Sources */ = {isa = PBXBuildFile; fileRef = 227C45371344E85600EED30D /* SVSimulatorRaindrop.m */; };
 		22ACC6AB16AF9D8B003AEFF2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22ACC6AA16AF9D8B003AEFF2 /* Cocoa.framework */; };
 		8D5B49B0048680CD000E48DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
-		8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
+		FD82F36816EE52340036A588 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FD82F36A16EE52340036A588 /* Localizable.strings */; };
+		FD82F36E16EE54240036A588 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD82F36D16EE54240036A588 /* CoreGraphics.framework */; };
+		FD82F36F16EE54400036A588 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22ACC6AA16AF9D8B003AEFF2 /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,7 +36,6 @@
 		089C1672FE841209C02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		089C167EFE841241C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		089C167FFE841241C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
-		1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		227C45311344E7FA00EED30D /* CLRaindropProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLRaindropProtocol.h; sourceTree = "<group>"; };
 		227C45321344E81200EED30D /* Raindrop.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Raindrop.plist; sourceTree = "<group>"; };
 		227C45361344E85600EED30D /* SVSimulatorRaindrop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVSimulatorRaindrop.h; sourceTree = "<group>"; };
@@ -46,8 +47,12 @@
 		22ACC69916AF9D8B003AEFF2 /* Simulator_Grabber.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; name = Simulator_Grabber.1; path = "Simulator Grabber/Simulator_Grabber.1"; sourceTree = "<group>"; };
 		22ACC6AA16AF9D8B003AEFF2 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		32DBCF630370AF2F00C91783 /* iOS Simulator Raindrop_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "iOS Simulator Raindrop_Prefix.pch"; sourceTree = "<group>"; };
-		8D5B49B6048680CD000E48DA /* iOS Simulator Raindrop.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS Simulator Raindrop.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D5B49B6048680CD000E48DA /* iOS Simulator Raindrop.raindrop */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS Simulator Raindrop.raindrop"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D5B49B7048680CD000E48DA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD82F36916EE52340036A588 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FD82F36B16EE53CA0036A588 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FD82F36C16EE53CA0036A588 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FD82F36D16EE54240036A588 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +68,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */,
+				FD82F36F16EE54400036A588 /* Cocoa.framework in Frameworks */,
+				FD82F36E16EE54240036A588 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +79,7 @@
 		089C166AFE841209C02AAC07 /* iOS Simulator */ = {
 			isa = PBXGroup;
 			children = (
+				FD82F36D16EE54240036A588 /* CoreGraphics.framework */,
 				08FB77AFFE84173DC02AAC07 /* Classes */,
 				32C88E010371C26100C91783 /* Other Sources */,
 				089C1671FE841209C02AAC07 /* Frameworks and Libraries */,
@@ -87,7 +94,6 @@
 				22ACC6AA16AF9D8B003AEFF2 /* Cocoa.framework */,
 				089C167FFE841241C02AAC07 /* AppKit.framework */,
 				089C1672FE841209C02AAC07 /* Foundation.framework */,
-				1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */,
 			);
 			name = "Frameworks and Libraries";
 			sourceTree = "<group>";
@@ -106,7 +112,7 @@
 		19C28FB8FE9D52D311CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8D5B49B6048680CD000E48DA /* iOS Simulator Raindrop.bundle */,
+				8D5B49B6048680CD000E48DA /* iOS Simulator Raindrop.raindrop */,
 				22ACC68F16AF9D8B003AEFF2 /* Simulator Grabber */,
 			);
 			name = Products;
@@ -122,6 +128,7 @@
 				22ACC69916AF9D8B003AEFF2 /* Simulator_Grabber.1 */,
 				22ACC69816AF9D8B003AEFF2 /* Simulator Grabber-Prefix.pch */,
 				32DBCF630370AF2F00C91783 /* iOS Simulator Raindrop_Prefix.pch */,
+				FD82F36A16EE52340036A588 /* Localizable.strings */,
 			);
 			name = "Other Sources";
 			sourceTree = "<group>";
@@ -161,7 +168,7 @@
 			name = "iOS Simulator Raindrop";
 			productInstallPath = "$(HOME)/Library/Bundles";
 			productName = "iOS Simulator";
-			productReference = 8D5B49B6048680CD000E48DA /* iOS Simulator Raindrop.bundle */;
+			productReference = 8D5B49B6048680CD000E48DA /* iOS Simulator Raindrop.raindrop */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -178,6 +185,7 @@
 				Japanese,
 				French,
 				German,
+				fr,
 			);
 			mainGroup = 089C166AFE841209C02AAC07 /* iOS Simulator */;
 			projectDirPath = "";
@@ -196,6 +204,7 @@
 			files = (
 				8D5B49B0048680CD000E48DA /* InfoPlist.strings in Resources */,
 				227C45331344E81200EED30D /* Raindrop.plist in Resources */,
+				FD82F36816EE52340036A588 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,8 +235,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				089C167EFE841241C02AAC07 /* English */,
+				FD82F36B16EE53CA0036A588 /* fr */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FD82F36A16EE52340036A588 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD82F36916EE52340036A588 /* en */,
+				FD82F36C16EE53CA0036A588 /* fr */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -249,7 +268,7 @@
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Bundles";
 				PRODUCT_NAME = "iOS Simulator Raindrop";
-				WRAPPER_EXTENSION = bundle;
+				WRAPPER_EXTENSION = raindrop;
 			};
 			name = Debug;
 		};
@@ -266,7 +285,7 @@
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Bundles";
 				PRODUCT_NAME = "iOS Simulator Raindrop";
-				WRAPPER_EXTENSION = bundle;
+				WRAPPER_EXTENSION = raindrop;
 			};
 			name = Release;
 		};
@@ -373,6 +392,7 @@
 				22ACC69D16AF9D8B003AEFF2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

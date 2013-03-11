@@ -19,8 +19,7 @@
 		
 		NSString *applicationName = [entry objectForKey:(id)kCGWindowOwnerName];
 		
-		if(applicationName != NULL && ([applicationName isEqualToString:@"iOS Simulator"] || [applicationName isEqualToString:@"Simulateur iOS"])) { // this should be put inside a localizables table or something
-			
+		if(applicationName != NULL && ([applicationName isEqualToString:NSLocalizedString(@"iOS Simulator", nil)])) {
 			CGWindowID windowID = [[entry objectForKey:(id)kCGWindowNumber] unsignedIntValue];
 			NSLog(@"%@ (%i)", applicationName, windowID);
 			
@@ -28,7 +27,7 @@
 			CGSize windowSize = CGSizeMake(CGImageGetWidth(windowImage), CGImageGetHeight(windowImage));
 			CGRect cropRect = CGRectNull;
             
-            NSLog(@"windowSize = %@", NSStringFromSize(windowSize));
+      NSLog(@"windowSize = %@", NSStringFromSize(windowSize));
 			
 			if(CGSizeEqualToSize(windowSize, kWindowSizePhone))
 				cropRect = kViewRectPhone;
@@ -42,14 +41,24 @@
 				cropRect = kViewRectTablet;
 			else if(CGSizeEqualToSize(windowSize, kWindowSizeTabletLandscape))
 				cropRect = kViewRectTabletLandscape;
-            else if(CGSizeEqualToSize(windowSize, kWindowSizePhoneRetina50))
-				cropRect = kViewRectPhoneRetina50;
-            else if(CGSizeEqualToSize(windowSize, kWindowSizePhoneFive))
-				cropRect = kViewRectPhoneFive;
-            else if(CGSizeEqualToSize(windowSize, kWindowSizePhoneFive50))
-				cropRect = kViewRectPhoneFive50;
-            
-            //NSLog(@"cropRect = %@", NSStringFromRect(cropRect));
+      else if(CGSizeEqualToSize(windowSize, kWindowSizePhoneRetina50))
+        cropRect = kViewRectPhoneRetina50;
+      else if(CGSizeEqualToSize(windowSize, kWindowSizePhoneRetina50Landscape))
+        cropRect = kViewRectPhoneRetina50Landscape;
+      else if(CGSizeEqualToSize(windowSize, kWindowSizePhoneFive))
+        cropRect = kViewRectPhoneFive;
+      else if(CGSizeEqualToSize(windowSize, kWindowSizePhoneFiveLandscape))
+        cropRect = kViewRectPhoneFiveLandscape;
+      else if(CGSizeEqualToSize(windowSize, kWindowSizePhoneFive50))
+        cropRect = kViewRectPhoneFive50;
+      else if(CGSizeEqualToSize(windowSize, kWindowSizePhoneFive50Landscape))
+        cropRect = kViewRectPhoneFive50Landscape;
+      else if(CGSizeEqualToSize(windowSize, kWindowSizePhoneFive75))
+        cropRect = kViewRectPhoneFive75;
+      else if(CGSizeEqualToSize(windowSize, kWindowSizePhoneFive75Landscape))
+        cropRect = kViewRectPhoneFive75Landscape;
+      
+        NSLog(@"cropRect = %@", NSStringFromRect(cropRect));
 			
 			if(!CGRectIsNull(cropRect)) {
 				
